@@ -1,0 +1,203 @@
+*{
+    box-sizing: border-box;  
+  }
+  html{
+    scroll-behavior: smooth;
+  }
+  
+  body{
+      margin: 0;
+      font-family: 'roboto', sans-serif;
+  }
+  
+  h1{font-size: 3.5em;}
+  h2{font-size: 2.7em;}
+  h3{font-size: 1.25em;}
+  ul{list-style: none;}
+  li{font-size: 1.25em;}
+  
+  
+  
+  .container{
+    max-width: 1400px;
+    margin: auto;
+  }
+  
+  .palabra-remarcada{
+  color: blueviolet;
+  }
+  
+  header{
+    background-color: rgb(200,200,200);
+  }
+  
+  header .logo{
+    margin: 0;
+    padding: 25,30;
+    font-weight: bold;
+    color:blueviolet;
+    font-size: 1.6em;
+  }
+  
+  header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  }
+  
+  header nav{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+  }
+  
+  header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  }
+  
+  header a:hover{
+    color: rgb(21, 112, 112);
+  }
+  
+  /*////////////////////////////////////////////*/
+  #principal{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+  /*background-image: url("imagenes/principal.jpg");*/
+  background-image: linear-gradient(0deg,rgba(0,0,0,0.3),rgba(0,0,0,0.3)) 
+  ,url("imagenes/principal.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  }
+  
+  #principal h1{
+    color: white;
+  }
+  
+  /*///////////////////////////////////////////////*/
+
+  #somos-empresa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 140vh;
+  
+  }
+  
+  #somos-empresa .container{
+    font-size: 10px; 
+    text-align: center;
+    padding: 200px 12px;
+    
+  }
+
+  #somos-empresa p{
+   /* margin: 16px 0px;
+    /*font-weight: bold;*/
+    font-size: 20px;
+  }
+
+  #somos-empresa li{
+    margin: 16px 0px;
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  /*///////////////////////////////////////////////*/
+
+  #contactar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+    background-color: rgba(30,30,30);
+    color: white;
+    text-align: center;
+  }
+
+  #contactar .container {
+    padding: 150px 12px;
+  }
+
+  #contactar h3{
+    margin-top: 0;
+  }
+
+  /*#contactar p{
+    display: none;
+  }*/
+
+  /*///////////////////////////////////////////////*/
+
+  #formu-viaje{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+    background-color: rgba(100,100,100);
+    color: white;
+    text-align: center;
+  }
+
+  #formu-viaje .container {
+    padding: 150px 12px;
+  }
+
+  /*#formu-viaje p{
+    display: none;
+  }*/
+
+  /*/////////////////////////////////////////////*/
+
+  footer{
+    background-color: rgb(139, 194, 175);
+  }
+
+  footer p{
+    /*margin: 0;*/
+    padding: 20;
+    color: rgb(78, 107, 97);
+  }
+
+  footer .container{
+    height: 50px;
+    display: flex;
+    justify-content: center;
+  }
+
+
+
+  /*////////////FIN VERSION MOBILE////////////////*/
+
+  /*////////////VERSION MAS GRANDE////////////////*/
+  @media (min-width: 720px){
+    header .container{
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    header nav{
+      flex-direction: row;
+      padding-bottom: 0;
+      padding-right: 20px;
+    }
+
+  }
