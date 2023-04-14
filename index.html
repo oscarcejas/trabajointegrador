@@ -8,7 +8,7 @@
     
     <link rel="stylesheet" href="estilos.css">
     <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
-
+ <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"> -->
 </head>
 <body>
     <header>
@@ -38,10 +38,11 @@
                     
                     Nuestros programas estan diseñados para brindarte una experiencia completa que incluye: </p> 
                     <ul>
-                        <li>Alojamiento</li>
-                        <li>Transporte</li>
-                        <li>Seguro medico</li>
-                        <li>Asesoramiento personalizado</li>
+                       
+                        <li><img src="imagenes/hotel.png" width="50"/> Alojamiento</li>
+                        <li><img src="imagenes/avion.png"width="50"/> Transporte</li>
+                        <li><img src="imagenes/asistencia.png"width="50"/> Seguro medico</li>
+                        <li><img src="imagenes/asesor.png"width="50"/> Asesoramiento personalizado</li>
                     </ul>
     
                 <p>
@@ -53,8 +54,38 @@
     </section>
 
     <section id="contactar">
-    <div class="container">
+     <div class="container">
         <h3>Contacto</h3>
+
+        <body id="cuerpofor">
+
+            <form class='contacto'>
+
+               
+                    <div> 
+                    <label>Nombre y Apellido</label>
+                    <input id="nombre" type='text'>
+                   </div> 
+
+                    <div>
+                        <label>Ingrese Email</label>
+                        <input id="email" type="email"/>
+                    </div>
+        
+                    <div>
+                    <input type='submit' value='ACEPTAR'>
+                    </div>
+                    
+
+                    <div>
+                    <label>Resumen</label>
+                    <textarea id="mens" rows=''></textarea>
+                    </div>
+                    
+                    
+                </form>
+        </body>
+
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet 
             minus, temporibus eligendi a ad magni pariatur soluta rem maiores nihil 
             exercitationem optio alias accusamus quas, ipsum quidem, quasi earum.</p>
@@ -62,18 +93,54 @@
     </section>
 
     <section id="formu-viaje">
-    <div class="container">
-       <h3>Formulario</h3>
-       <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sed eveniet 
-        minus, temporibus eligendi a ad magni pariatur soluta rem maiores nihil 
-        exercitationem optio alias accusamus quas, ipsum quidem, quasi earum.</p>
+      <div class="container">
+       <h3>Programa tu Viaje</h3>
+
+       <div id="cuerpov">
+
+        <form class='destino'>
+               
+             
+                <div>
+               <label >Elige Destino</label>
+               <select name="lugares" id="viaje">
+                 <option value="roma">Roma</option>
+                 <option value="paris">Paris</option>
+                 <option value="londres">Londres</option>
+                 <option value="nueva york">Nueva York</option>
+                 <option value="cancun">Cancun</option>
+                </select>
+                </div>
+            
+            
+                <div>
+                    <label>Elige Fecha</label>
+                    <input id="fecha" type="date" value="2023-04-13" min="2023-04-13" max="2050-12-31">
+                </div>
+                
+                <div>
+                    <input type='submit' value='CONFIRMAR'>
+                </div>
+                
+               
+                <div>
+                    <label>Comprobante</label>
+                    <textarea id="ticket" rows=''></textarea>
+                </div>
+                
+            </form>
+        </div>
+
+       
+     </div>
     </section>
+
 
     <footer>
         <div class="container">
             <p>&copy;Traviajar 2023</p>
         </div>
     </footer>
-         
+     <script src="funciones.js"></script>    
 </body>
 </html>
